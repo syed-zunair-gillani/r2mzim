@@ -37,7 +37,7 @@ function Navbar() {
           <div className="w-[1px] h-8 bg-gray-400" />
           <div>
             <Link href="#" className="font-bold text-gray-700 text-4xl">
-              (01) 114 33 6321
+              +263 (242) 446 431
             </Link>
           </div>
         </div>
@@ -65,7 +65,7 @@ function Navbar() {
               ))}
             </div>
 
-            <div className="md:flex gap-4 items-center hidden">
+            <div className="md:flex gap-6 items-center hidden">
               <Link href="#">
                 <FaFacebook className="text-2xl text-white" />
               </Link>

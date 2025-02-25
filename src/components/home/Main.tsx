@@ -5,8 +5,8 @@ function Main() {
   return (
     <>
       <div
-        className="relative text-white bg-cover bg-center h-[540px]"
-        style={{ backgroundImage: 'url(/images/homemain.jpeg)' }}
+        className="relative text-white bg-cover bg-fixed bg-center h-[540px]"
+        style={{ backgroundImage: 'url(/images/slider1.jpg)' }}
       >
         {/* Black overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
