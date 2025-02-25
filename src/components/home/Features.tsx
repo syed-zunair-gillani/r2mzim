@@ -9,7 +9,7 @@ function Features() {
                     <h3 className='text-[24px] font-bold text-[#2a2a2a]'>
                         <span className='font-[300]'>OUR</span> FEATURES
                     </h3>
-                    <p className='text-[#777777] font-[400] text-[14px] py-3'>
+                    <p className='text-[#777777] font-[400] py-3'>
                         Buzz analytics business-to-consumer partner network ramen social media
                     </p>
                 </div>
