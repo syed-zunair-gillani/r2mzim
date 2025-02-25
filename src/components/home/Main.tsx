@@ -17,7 +17,7 @@ function Main() {
             className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold max-w-[550px]"
             style={{
               background: '-webkit-linear-gradient(left, #9357cc 0%, #2989d8 50%, #2cc99d 100%)',
-              '-webkit-background-clip': 'text',
+              WebkitBackgroundClip : 'text',
               color: 'transparent',
             }}
           >
