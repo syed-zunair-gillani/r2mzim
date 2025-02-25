@@ -14,20 +14,20 @@ function Main() {
         {/* Text */}
         <div className="container mx-auto px-4 flex flex-col justify-center h-full ">
           <h1
-            className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium"
+            className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold max-w-[550px]"
             style={{
               background: '-webkit-linear-gradient(left, #9357cc 0%, #2989d8 50%, #2cc99d 100%)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }}
           >
-            Deliver the Goods <br /> on time.
+            Deliver the Goods  on time.
           </h1>
           <p className="z-10 font-[300]  text-[26px] relative py-6 pb-10 w-72">
             Over 100+ acre interior warehouse space
           </p>
           <div>
-          <Link href="" className="relative border px-6 py-4 text-[16px] font-[400]">
+          <Link href="" className="relative border px-6 py-4 text-[16px] hover:bg-white hover:text-black font-[400]">
             View Solutions
           </Link>
           </div>

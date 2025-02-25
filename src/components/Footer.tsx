@@ -22,7 +22,7 @@ function Footer() {
                             className='mx-auto mb-4'
                         />
                         <p className='py-4 text-white leading-[28px] font-[300] text-sm sm:text-base'>
-                            Route to Market is Zimbabwe’s most experienced distribution and merchandising company for all your confectionery, groceries, beverages, and cosmetic ranges. We ensure your products are delivered on time and are on the shelf, in prime space, ready for the customer to purchase.
+                            Route to Market is Zimbabwes most experienced distribution and merchandising company for all your confectionery, groceries, beverages, and cosmetic ranges. We ensure your products are delivered on time and are on the shelf, in prime space, ready for the customer to purchase.
                         </p>
                     </div>
                     <div className='mx-auto text-white'>
@@ -67,7 +67,7 @@ function Footer() {
                             <p>28 Anthony Avenue, Msasa, Harare, Zimbabwe</p>
                         </div>
                         <div className='py-8'>
-                            <h3 className='text-[18px] font-[700] pb-4'>WE'RE SOCIAL</h3>
+                            <h3 className='text-[18px] font-[700] pb-4'>WE ARE SOCIAL</h3>
                             <div className='flex gap-4 items-center'>
                                 <Link href='/facebook' className='bg-slate-700 px-4 py-4 rounded-full'>
                                     <FaFacebookF className='text-2xl text-white' />

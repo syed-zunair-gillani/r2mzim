@@ -8,15 +8,15 @@ function Number() {
             <section className='container mx-auto px-4'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
                     {/* Item 1 */}
-                    <div className='flex gap-2'>
+                    <div className='flex gap-4'>
                         <div>
                             <FaCarSide className='text-[40px] md:text-[50px] lg:text-[50px] mt-4' />
                         </div>
                         <div>
-                            <h4 className='text-[40px] md:text-[56px] font-[700] text-[#1874c1]'>
+                            <h4 className='text-xl md:text-2xl font-[700] text-[#1874c1]'>
                                 11000m2
                             </h4>
-                            <div className='border-2 w-10 border-[#fcb900] mb-3'></div>
+                            <div className='border-2 w-10 border-[#fcb900] my-3'></div>
                             <h3 className='text-[16px] md:text-[17px] font-[700] text-[#2a2a2a]'>
                                 WAREHOUSE CAPACITY
                             </h3>
@@ -27,15 +27,15 @@ function Number() {
                     </div>
 
                     {/* Item 2 */}
-                    <div className='flex gap-2  '>
+                    <div className='flex gap-4  '>
                         <div>
                             <FaCarSide className=' text-[40px] md:text-[50px] lg:text-[50px] mt-4' />
                         </div>
                         <div>
-                            <h4 className='text-[40px] md:text-[56px] font-[700] text-[#1874c1]'>
+                            <h4 className='text-xl md:text-2xl font-[700] text-[#1874c1]'>
                             +400
                             </h4>
-                            <div className='border-2 w-10 border-[#fcb900] mb-3'></div>
+                            <div className='border-2 w-10 border-[#fcb900] my-3'></div>
                             <h3 className='text-[16px] md:text-[17px] font-[700] text-[#2a2a2a]'>
                             STORES DELIVERED TO
                             </h3>
@@ -45,33 +45,33 @@ function Number() {
                     </div>
 
                     {/* Item 3 */}
-                    <div className='flex gap-2 mx-auto'>
+                    <div className='flex gap-4 mx-auto'>
                         <div>
                             <FaCarSide className='text-[40px] md:text-[50px] lg:text-[50px] mt-4' />
                         </div>
                         <div>
-                            <h4 className='text-[40px] md:text-[56px] font-[700] text-[#1874c1]'>
+                            <h4 className='text-xl md:text-2xl font-[700] text-[#1874c1]'>
                                 +895K
                             </h4>
-                            <div className='border-2 w-10 border-[#fcb900] mb-3'></div>
+                            <div className='border-2 w-10 border-[#fcb900] my-3'></div>
                             <h3 className='text-[16px] md:text-[17px] font-[700] text-[#2a2a2a]'>
                             KILOMETERS PER YEAR
                             </h3>
                             <p className='text-[12px] md:text-[14px] text-[#777777] py-3 font-[400] leading-[24px]'>
-                            Route to Market's distribution team boasts a 24 hour delivery time within Harare, and 72 hours within the rest of Zimbabwe.                            </p>
+                            Route to Markets distribution team boasts a 24 hour delivery time within Harare, and 72 hours within the rest of Zimbabwe.                            </p>
                         </div>
                     </div>
 
                     {/* Item 4 */}
-                    <div className='flex gap-2 mx-auto'>
+                    <div className='flex gap-4 mx-auto'>
                         <div>
                             <FaCarSide className='text-[40px] md:text-[50px] lg:text-[50px] mt-4' />
                         </div>
                         <div>
-                            <h4 className='text-[40px] md:text-[56px] font-[700] text-[#1874c1]'>
+                            <h4 className='text-xl md:text-2xl font-[700] text-[#1874c1]'>
                                 500
                             </h4>
-                            <div className='border-2 w-10 border-[#fcb900] mb-3'></div>
+                            <div className='border-2 w-10 border-[#fcb900] my-3'></div>
                             <h3 className='text-[16px] md:text-[17px] font-[700] text-[#2a2a2a]'>
                             STAFF COUNTRYWIDE
                             </h3>

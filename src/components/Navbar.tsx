@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -21,54 +21,60 @@ function Navbar() {
 
   return (
     <>
-
       {/* Top Bar */}
-      <div className="bg-[#1c2e16] py-2 sm:block hidden">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
-            <div className="flex gap-3 items-center text-white">
-              <p>info@r2mzim.com</p>
-            </div>
-            <div className="flex gap-6 text-white items-center">
-              <span className="flex gap-2 items-center">
-                <FaPhoneAlt />
-                <p>Tel : +263 (242) 446 431/2</p>
-              </span>
-              <Link href="/facebook">
-                <FaFacebook className='text-xl hover:text-blue-700' />
-              </Link>
-              <Link href="/linkedinIn">
-                <FaLinkedinIn className='text-xl hover:text-green-300' />
-              </Link>
-            </div>
+      <section className="container hidden md:flex justify-between gap-5 items-center mx-auto px-4">
+        <Link href="/">
+          <Image src="/images/logonavbar.png" alt="" width={100} height={100} />
+        </Link>
+        <div className="flex items-center gap-10">
+          <div className="flex gap-3 items-center">
+            <FaPhoneAlt className="text-2xl text-primary" />
+            <p className="leading-[18px]">
+              Want a transport? <br />
+              call us now
+            </p>
+          </div>
+          <div className="w-[1px] h-8 bg-gray-400" />
+          <div>
+            <Link href="#" className="font-bold text-gray-700 text-4xl">
+              (01) 114 33 6321
+            </Link>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Navbar */}
-      <div className="bg-white sticky top-0 py-2 shadow-md z-[100]">
+      <div className="bg-primary sticky top-0 py-2 md:py-6 shadow-md z-[100]">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
-            {/* Logo */}
-            <Link href="/">
+            <Link href="/" className="md:hidden">
               <Image
                 src="/images/logonavbar.png"
-                alt="Notify Logo"
-                width={500}
-                height={500}
-                className="w-full"
+                alt=""
+                width={40}
+                height={30}
+                className="grayscale invert"
               />
             </Link>
-
             {/* Desktop Menu */}
-            <div className="hidden md:flex gap-6 items-center uppercase">
+            <div className="hidden md:flex gap-8 items-center text-white capitalize text-lg">
               {menuItems.map((item, index) => (
                 <Link key={index} href={item.href} className="hover:underline">
                   {item.label}
                 </Link>
               ))}
+            </div>
 
-             
+            <div className="md:flex gap-4 items-center hidden">
+              <Link href="#">
+                <FaFacebook className="text-2xl text-white" />
+              </Link>
+              <Link href="#">
+                <FaLinkedinIn className="text-3xl text-white" />
+              </Link>
+              <Link href="#">
+                <FaPhoneAlt className="text-2xl text-white" />
+              </Link>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -81,13 +87,17 @@ function Navbar() {
                 className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                stroke="#fff"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                  d={
+                    isMobileMenuOpen
+                      ? "M6 18L18 6M6 6l12 12"
+                      : "M4 6h16M4 12h16M4 18h16"
+                  }
                 />
               </svg>
             </button>
@@ -103,14 +113,16 @@ function Navbar() {
                   {item.label}
                 </Link>
               ))}
-              <Link href="/demo" className="bg-[#eb050e] text-white py-2 px-6 rounded-md">
+              <Link
+                href="/demo"
+                className="bg-[#eb050e] text-white py-2 px-6 rounded-md"
+              >
                 DEMO
               </Link>
             </div>
           </div>
         )}
       </div>
-
     </>
   );
 }
