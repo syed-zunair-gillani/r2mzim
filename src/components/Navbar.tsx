@@ -14,9 +14,9 @@ function Navbar() {
     { label: "About", href: "/About" },
     { label: "Merchandising", href: "/Merchandising" },
     { label: "Merchandising", href: "/Merchandising" },
-    { label: "Warehousing", href: "/Warehousing" },
-    { label: "Principals", href: "/Principals" },
-    { label: "Contact", href: "/Contact" },
+    { label: "Warehousing", href: "/warehousing" },
+    { label: "Principals", href: "/our-principals" },
+    { label: "Contact", href: "/contact-us" },
   ];
 
   return (
