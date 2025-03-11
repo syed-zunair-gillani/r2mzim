@@ -11,7 +11,7 @@ function Navbar() {
   // Menu items array
   const menuItems = [
     { label: "Home", href: "/" },
-    { label: "About", href: "/About" },
+    { label: "About", href: "/about-us" },
     { label: "Merchandising", href: "/Merchandising" },
     { label: "Merchandising", href: "/Merchandising" },
     { label: "Warehousing", href: "/warehousing" },

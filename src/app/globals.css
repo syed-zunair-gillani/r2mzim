@@ -5,3 +5,10 @@
 .container{
     max-width: 1280px !important;
 }
+
+.slick-slider {
+    margin:0 -15px;
+}
+.slick-slide {
+    padding:15px;  
+}
