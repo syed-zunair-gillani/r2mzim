@@ -12,8 +12,8 @@ function Navbar() {
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about-us" },
-    { label: "Merchandising", href: "/Merchandising" },
-    { label: "Merchandising", href: "/Merchandising" },
+    { label: "Merchandising", href: "/merchandising" },
+    { label: "Distribution", href: "/distribution" },
     { label: "Warehousing", href: "/warehousing" },
     { label: "Principals", href: "/our-principals" },
     { label: "Contact", href: "/contact-us" },
