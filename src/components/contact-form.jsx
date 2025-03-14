@@ -8,7 +8,7 @@ import { BiMessageDetail } from "react-icons/bi";
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 

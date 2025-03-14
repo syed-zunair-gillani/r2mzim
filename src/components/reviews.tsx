@@ -43,7 +43,7 @@ const Reviews = () => {
 
 export default Reviews;
 
-var settings = {
+const settings = {
   dots: true,
   infinite: true,
   speed: 500,

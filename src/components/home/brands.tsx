@@ -1,10 +1,18 @@
+"use client"
 import React from "react";
+import { motion } from "framer-motion";
 
 const Brands = () => {
   return (
     <>
       <div className="container mx-auto px-4">
-        <div className="max-w-[800px] mx-auto">
+        <motion.div 
+          className="max-w-[800px] mx-auto"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-[24px] font-bold text-center text-[#2a2a2a]">
             <span className='font-[300]'>Partnerships with</span> Coveted Brands
           </h1>
@@ -13,72 +21,21 @@ const Brands = () => {
             investing in the development of the product to maximize sales. At
             the same time and maintaining the integrity.
           </p>
-        </div>
-        <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 mb-8 flex flex-wrap">
-          <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r :border-r border-gray-200 xl:pb-10 pb-16 items-center">
-            <img
-              className="focus:outline-none"
-              src="https://cdn.tuk.dev/assets/adidas-dark.png"
-              alt="Adidas"
-              role="img"
-            />
-          </div>
-          <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r border-gray-200 xl:pb-10 pb-16 items-center">
-            <img
-              className="focus:outline-none"
-              src="https://cdn.tuk.dev/assets/channel-dark.png"
-              alt="Chanel"
-              role="img"
-            />
-          </div>
-          <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b border-gray-200 xl:pb-10 pb-16 pt-4 items-center">
-            <img
-              className="focus:outline-none"
-              src="https://cdn.tuk.dev/assets/nike-dark.png"
-              alt="Nike"
-              role="img"
-            />
-          </div>
-          <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center lg:border-b xl:border-b lg:border-l xl:border-l border-gray-200 xl:pb-10 pb-16 items-center">
-            <img
-              className="focus:outline-none"
-              src="https://cdn.tuk.dev/assets/toyota-dark.png"
-              alt="Toyota"
-              role="img"
-            />
-          </div>
-          <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 xl:pt-10 items-center">
-            <img
-              className="focus:outline-none"
-              src="https://cdn.tuk.dev/assets/gs1-dark.png"
-              alt="GS1"
-              role="img"
-            />
-          </div>
-          <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 xl:pt-10 items-center">
-            <img
-              className="focus:outline-none"
-              src="https://cdn.tuk.dev/assets/berry-dark.png"
-              alt="BlackBerry"
-              role="img"
-            />
-          </div>
-          <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:pt-10 lg:pt-10 md:pt-2 pt-16">
-            <img
-              className="focus:outline-none"
-              src="https://cdn.tuk.dev/assets/min-dark.png"
-              alt="Mini"
-              role="img"
-            />
-          </div>
-          <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-l lg:border-l border-gray-200 xl:pt-10 lg:pt-10 md:pt-2 pt-16">
-            <img
-              className="focus:outline-none"
-              src="https://cdn.tuk.dev/assets/honda-dark.png"
-              alt="Honda"
-              role="img"
-            />
-          </div>
+        </motion.div>
+        
+        <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 flex flex-wrap">
+          {["https://cdn.tuk.dev/assets/adidas-dark.png", "https://cdn.tuk.dev/assets/channel-dark.png", "https://cdn.tuk.dev/assets/nike-dark.png", "https://cdn.tuk.dev/assets/toyota-dark.png", "https://cdn.tuk.dev/assets/gs1-dark.png", "https://cdn.tuk.dev/assets/berry-dark.png", "https://cdn.tuk.dev/assets/min-dark.png", "https://cdn.tuk.dev/assets/honda-dark.png"].map((src, index) => (
+            <motion.div 
+              key={index} 
+              className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center border-gray-200 pb-16 items-center"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.2, duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <img className="focus:outline-none" src={src} alt="Brand Logo" role="img" />
+            </motion.div>
+          ))}
         </div>
       </div>
     </>
