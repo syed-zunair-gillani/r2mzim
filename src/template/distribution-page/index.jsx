@@ -21,7 +21,7 @@ const DistributionTemplate = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
-        className="text-center max-w-[800px] mx-auto my-16"
+        className="text-center max-w-[800px] mt-10 mx-auto my-16"
       >
         <h3 className="text-[24px] font-bold text-[#2a2a2a]">
           <span className="font-[300]">Distribu</span>tion

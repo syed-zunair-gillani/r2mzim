@@ -30,7 +30,7 @@ const WarehousingTemplate = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="text-center max-w-[800px] mx-auto my-16"
+        className="text-center max-w-[800px] mt-10 mx-auto my-16"
       >
         <motion.h3 className="text-[24px] font-bold text-[#2a2a2a]" variants={fadeInUp}>
           <span className="font-[300]">WAR</span>EHOUSING
