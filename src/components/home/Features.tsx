@@ -17,6 +17,10 @@ function Features() {
                     <h3 className='text-[24px] font-bold text-[#2a2a2a]'>
                         <span className='font-[300]'>OUR</span> FEATURES
                     </h3>
+                    <div className='flex justify-center items-center relative mt-4'>
+                        <div className='h-[1px] bg-gray-200 w-full max-w-60'/>
+                        <div className='h-1 w-12 bg-yellow-400 mt-[-2px] absolute top-[1px]'/>
+                    </div>
                     <p className='text-[#777777] font-[400] py-3'>
                         Buzz analytics business-to-consumer partner network ramen social media
                     </p>

@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  visible: { opacity: 1, y: 0, marginTop: 40, transition: { duration: 0.6 } },
+};
+const fadeInUp2 = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, marginBottom:20, transition: { duration: 0.6 } },
 };
 
 const imageFade = {
@@ -30,12 +34,16 @@ const WarehousingTemplate = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="text-center max-w-[800px] mt-10 mx-auto my-16"
+        className="text-center max-w-[800px] mt-10 mx-auto"
       >
         <motion.h3 className="text-[24px] font-bold text-[#2a2a2a]" variants={fadeInUp}>
           <span className="font-[300]">WAR</span>EHOUSING
         </motion.h3>
-        <motion.p className="text-[#777777] font-[400] py-3" variants={fadeInUp}>
+        <div className="flex justify-center items-center relative mt-4">
+            <div className="h-[1px] bg-gray-200 w-full max-w-60" />
+            <div className="h-1 w-12 bg-yellow-400 absolute top-[-1px]" />
+          </div>
+        <motion.p className="text-[#777777] font-[400] py-3" variants={fadeInUp2 }>
           Route to Market has two warehouses totaling 12,900sq/m of storage space.
         </motion.p>
       </motion.div>
@@ -78,6 +86,7 @@ const WarehousingTemplate = () => {
           ensure the safety of your stock.
         </motion.p>
       </motion.section>
+      <div className="mb-20"/>
     </>
   );
 };

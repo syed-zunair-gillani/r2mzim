@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import Reviews from "@/components/reviews";
 
 const fadeIn = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0,marginTop: 40, transition: { duration: 0.8 } },
 };
 
 const imageZoom = {
@@ -23,11 +23,15 @@ const AboutTemplate = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
-        className="text-center max-w-[800px] mx-auto mt-10 my-16"
+        className="text-center max-w-[800px] mx-auto mt-10 "
       >
         <h3 className="text-[24px] font-bold text-[#2a2a2a]">
           <span className="font-[300]">ABOUT </span>US
         </h3>
+        <div className="flex justify-center items-center relative mt-4">
+            <div className="h-[1px] bg-gray-200 w-full max-w-60" />
+            <div className="h-1 w-12 bg-yellow-400 absolute top-[-1px]" />
+          </div>
         <p className="text-[#777777] font-[400] py-3">
           Route to Market provides a fully resourced, end-to-end retail solution
           of world-class distribution and merchandising throughout Zimbabwe.
@@ -43,7 +47,7 @@ const AboutTemplate = () => {
           variants={imageZoom}
           className="flex justify-center"
         >
-          <Image src="/images/about.jpg" alt="" width={800} height={400} />
+          <Image src="/images/about.jpg" alt="" width={800} height={400}/>
         </motion.figure>
 
         {/* Content Animation */}

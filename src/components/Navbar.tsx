@@ -5,8 +5,10 @@ import Image from "next/image";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const path = usePathname()
 
   // Menu items array
   const menuItems = [
@@ -59,7 +61,7 @@ function Navbar() {
             {/* Desktop Menu */}
             <div className="hidden md:flex gap-8 items-center text-white capitalize text-lg">
               {menuItems.map((item, index) => (
-                <Link key={index} href={item.href} className="hover:underline">
+                <Link key={index} href={item.href} className={`hover:text-yellow-400 ${path === item.href && 'text-yellow-400'}`}>
                   {item.label}
                 </Link>
               ))}

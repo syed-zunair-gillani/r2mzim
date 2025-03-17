@@ -75,9 +75,9 @@ function Number() {
             width={500}
             height={500}
             alt="Transport Icon"
-            className="w-40 mx-auto py-6"
+            className="w-40 mx-auto mb-4 py-6"
           />
-          <Link href="/" className="border px-8 py-4 bg-[#0081c2] text-white text-lg font-medium">
+          <Link href="/" className="border px-8 py-4 bg-[#0081c2] hover:border-[#0081c2] hover:bg-transparent hover:text-[#0081c2] text-white text-lg font-medium">
             Book a Transport Now
           </Link>
         </motion.div>
