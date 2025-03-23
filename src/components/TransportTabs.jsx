@@ -28,11 +28,14 @@ const TransportTabs = () => {
             description:
                 "Whether you’re looking for short-term tactical merchandising support or wish to develop a long-term relationship, Warpack and Dpack will work with you to find a prompt, efficient and cost-effective solution to suit your requirements. Our strength lies in our numbers with over 450 fully trained and experienced merchandising staff across all major towns and cities across Zimbabwe - see below for a map showing our numbers.  Our sales and merchandising team service all formal retail and wholesale outlets in Zimbawe including SPAR, OK, TM PnP Zimbabwe, Greens, N Richards, Metro Peech and Browne Wholesalers, Choppies and many other retailers.",
             services: [
-                "Express Delivery",
-                "International Shipping",
-                "Secure Handling",
-                "Cargo Management",
-                "Air Logistics",
+                "National based account management",
+                "Assist with product launches",
+                "High-speed delivery of products to the shelf",
+                "Instore sales and merchandising",
+                "Display activity",
+                "Marketing assistance",
+                "Market intelligence",
+                "Planogram execution"
             ],
         },
     };
