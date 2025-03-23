@@ -1,15 +1,11 @@
 "use client"
 import React from "react";
 import { motion } from "framer-motion";
+import Brands from "@/components/brands";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, marginTop:40, transition: { duration: 0.8 } },
-};
-
-const staggerContainer = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.2 } },
 };
 
 const DistributionTemplate = () => {
@@ -67,32 +63,7 @@ const DistributionTemplate = () => {
       </motion.section>
 
       {/* Brand Logos Section */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={staggerContainer}
-        className="xl:pb-16 lg:pb-16 md:pb-16 sm:pb-16 flex flex-wrap container mx-auto px-3"
-      >
-        {[
-          "https://cdn.tuk.dev/assets/adidas-dark.png",
-          "https://cdn.tuk.dev/assets/channel-dark.png",
-          "https://cdn.tuk.dev/assets/nike-dark.png",
-          "https://cdn.tuk.dev/assets/toyota-dark.png",
-          "https://cdn.tuk.dev/assets/gs1-dark.png",
-          "https://cdn.tuk.dev/assets/berry-dark.png",
-          "https://cdn.tuk.dev/assets/min-dark.png",
-          "https://cdn.tuk.dev/assets/honda-dark.png",
-        ].map((src, index) => (
-          <motion.div
-            key={index}
-            variants={fadeIn}
-            className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center border-gray-200 pb-16 items-center"
-          >
-            <img className="focus:outline-none" src={src} alt="Brand Logo" role="img" />
-          </motion.div>
-        ))}
-      </motion.div>
+      <Brands/>
     </>
   );
 };

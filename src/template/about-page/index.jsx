@@ -39,15 +39,15 @@ const AboutTemplate = () => {
       </motion.div>
 
       {/* Image + Content Section */}
-      <section className="max-w-[1200px] mx-auto px-3">
+      <section className="max-w-[1200px] mx-auto mt-10 items-start grid md:grid-cols-2 gap-10 px-3">
         <motion.figure
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={imageZoom}
-          className="flex justify-center"
+          className="border flex justify-center py-4"
         >
-          <Image src="/images/about.jpg" alt="" width={800} height={400}/>
+          <Image src="/images/about.jpg" alt="" width={600} height={300} className="h-auto"/>
         </motion.figure>
 
         {/* Content Animation */}
@@ -56,7 +56,7 @@ const AboutTemplate = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeIn}
-          className="mt-4 text-lg mb-16 leading-7"
+          className="-mt-2 text-lg leading-7"
         >
           Route to Market aspires to be the preferred choice for manufacturers
           in Zimbabwe and the region. Route to Market encompasses some of
@@ -87,7 +87,7 @@ const AboutTemplate = () => {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <h3 className="text-[24px] font-bold text-[#2a2a2a] text-center max-w-[800px] mx-auto mt-20 mb-10">
+        <h3 className="text-[24px] font-bold text-[#2a2a2a] text-center max-w-[800px] mx-auto mt-12 mb-10">
           <span className="font-[300]">
             Our Executive Management Team brings proven expertise and experience
             in{" "}

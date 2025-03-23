@@ -1,28 +1,33 @@
-"use client"
+"use client";
 import React from "react";
 import { FaCarSide } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const stats = [
   {
-    value: "11000m²",
+    value: 11000,
+    suffix: "m²",
     title: "WAREHOUSE CAPACITY",
     description: "Route to Market has two dry goods warehouses totaling 11,000m² of floor space.",
   },
   {
-    value: "+400",
+    value: 400,
+    suffix: "+",
     title: "STORES DELIVERED TO",
     description: "Established relationships with all major retail outlets across Zimbabwe.",
   },
   {
-    value: "+895K",
+    value: 895000,
+    suffix: "+",
     title: "KILOMETERS PER YEAR",
     description: "Distribution team boasts a 24-hour delivery time within Harare.",
   },
   {
-    value: "500",
+    value: 500,
     title: "STAFF COUNTRYWIDE",
     description: "Experienced, well-trained staff in every corner of Zimbabwe.",
   },
@@ -49,21 +54,29 @@ function Number() {
     >
       <section className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {stats.map((item, index) => (
-            <motion.div
-              key={index}
-              variants={slideIn(index % 2 === 0 ? "left" : "right")}
-              className="flex gap-4"
-            >
-              <FaCarSide className="text-[50px] mt-4" />
-              <div>
-                <h4 className="text-2xl font-bold text-[#1874c1]">{item.value}</h4>
-                <div className="border-2 w-10 border-[#fcb900] my-3"></div>
-                <h3 className="text-lg font-bold text-[#2a2a2a]">{item.title}</h3>
-                <p className="text-sm text-[#777777] py-3 leading-6">{item.description}</p>
-              </div>
-            </motion.div>
-          ))}
+          {stats.map((item, index) => {
+            const { ref, inView } = useInView({ triggerOnce: true });
+
+            return (
+              <motion.div
+                key={index}
+                variants={slideIn(index % 2 === 0 ? "left" : "right")}
+                className="flex gap-4"
+                ref={ref}
+              >
+                <FaCarSide className="text-[50px] mt-4" />
+                <div>
+                  <h4 className="text-2xl font-bold text-[#1874c1]">
+                    {inView && <CountUp start={0} end={item.value} duration={2} separator="," />}
+                    {item.suffix || ""}
+                  </h4>
+                  <div className="border-2 w-10 border-[#fcb900] my-3"></div>
+                  <h3 className="text-lg font-bold text-[#2a2a2a]">{item.title}</h3>
+                  <p className="text-sm text-[#777777] py-3 leading-6">{item.description}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* Bottom Section */}

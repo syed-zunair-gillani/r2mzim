@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, marginTop: 40, transition: { duration: 0.8 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
 const staggerContainer = {
@@ -43,7 +43,7 @@ const MerchandisingTemplate = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
-        className="max-w-[800px] flex flex-col bg-gray-50 lg:flex-row-reverse mx-auto gap-10 mb-10 px-3"
+        className="max-w-[1280px] px-3 md:px-0 flex flex-col bg-gray-50 lg:flex-row-reverse mx-auto gap-10 mb-10"
       >
         <figure className="flex justify-center flex-1">
           <motion.img
@@ -57,7 +57,7 @@ const MerchandisingTemplate = () => {
             className="object-cover object-right"
           />
         </figure>
-        <motion.div variants={fadeIn} className="text-lg flex-1 p-5">
+        <motion.div variants={fadeIn} className="text-lg flex-1 pb-4 md:py-10 px-5">
           <p>
             Warpack and Dpack are market leaders in the sales and merchandising
             industry in Zimbabwe, providing you with hassle-free nationwide
@@ -85,7 +85,7 @@ const MerchandisingTemplate = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
-        className="max-w-[800px] flex flex-col bg-gray-50 lg:flex-row mx-auto gap-10 mb-20 px-3"
+        className="max-w-[1280px] px-3 md:px-0 flex flex-col bg-gray-50 lg:flex-row mx-auto gap-10 mb-20"
       >
         <figure className="flex justify-center flex-1">
           <motion.img
@@ -99,7 +99,7 @@ const MerchandisingTemplate = () => {
             className="object-cover object-left"
           />
         </figure>
-        <motion.div variants={fadeIn} className="text-lg flex-1 p-5">
+        <motion.div variants={fadeIn} className="text-lg flex-1 mb-4 md:py-10 px-5">
           <p>
             Whether you’re looking for short-term tactical merchandising support
             or wish to develop a long-term relationship, Warpack and Dpack will
