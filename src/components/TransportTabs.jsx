@@ -61,7 +61,7 @@ const TransportTabs = () => {
 
                     {/* Services List */}
                     <div className="flex mt-5 items-start gap-5 justify-between">
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-2 gap-2">
                             {tabContent[activeTab].services.map((service, index) => (
                                 <div key={index} className="flex items-center space-x-2 text-gray-700">
                                     <span className="text-[#2277BC]">✔</span>
